@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content=
+"width=device-width, initial-scale=1.0"
+>
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Page de Contact</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e1e;
+            color: white;
+        }
+        header {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #f8f8f8;
+        }
+        section {
+            padding: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .contact-form {
+            background-color: #333;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            background-color: #444;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .contact-form input[type="submit"] {
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+        }
+        .contact-form input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .contact-form label {
+            font-size: 1.1em;
+            margin-bottom: 5px;
+            display: block;
+        }
+        footer {
+            background-color: #111;
+            text-align: center;
+            padding: 10px;
+            color: #888;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+</style>
+</head>
+<body>
+<header>
+<h1>Contactez-nous</h1>
+</header>
+<section>
+<div class="contact-form">
+<h2>Envoyez-nous un message</h2>
+<form action="#" method="POST">
+<label for="name">Nom</label>
+<input type="text" id="name" name="name" required>
+<label for="email">Email</label>
+<input type="email" id="email" name="email" required>
+<label for="subject">Objet</label>
+<input type="text" id="subject" name="subject" required>
+<label for="message">Message</label>
+<textarea id="message" name="message" rows="6" required></textarea>
+<input type="submit" value="Envoyer">
+</form>
+</div>
+</section>
+<footer>
+<p>&copy; 2024 VotreSite - Tous droits réservés</p>
+</footer>
+</body>
+</html>
